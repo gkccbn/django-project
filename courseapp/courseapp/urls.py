@@ -6,6 +6,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', include('pages.urls')),
-    path('kurs/', include('courses.urls')),
+    path('kurslar/', include('courses.urls')),
     path('admin/', admin.site.urls),   #tüm alt endpointleri /client endpoint altına toplamış oluruz
 ]

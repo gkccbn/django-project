@@ -3,9 +3,9 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.home), #route
-    path('anasayfa',views.home),
-    path('iletisim',views.iletisim),
-    path('hakkimizda',views.hakkimizda),
+    path('', views.index), #route
+    path('index',views.index),
+    path('contact',views.contact),
+    path('about',views.about),
 
 ]
