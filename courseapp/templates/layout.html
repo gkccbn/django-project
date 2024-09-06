@@ -11,41 +11,12 @@
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-danger navbar-dark">
-        <div class="container">
-            <a href="/" class="navbar-brand">Course App</a>
+   
+    {% include "partials/_nav.html" %}
 
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item">
-                    <a href="/" class="nav-link">Kurslar</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contact" class="nav-link">iletişim</a>
-                </li>
-                <li class="nav-item">
-                    <a href="/about" class="nav-link">Hakkımızda</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <div class="container mt-3"> <!--mt-3 margin top ile üstten bosluk verdik mt 1 2 3 olabilir-->
-        <div class="row"> <!--satırı böldük 3 birim sol, sağ 9 sağ-->
-            <div class="col-3"></div>
-            <!--menu-->
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">programlama</a>
-                <a href="#" class="list-group-item list-group-item-action">web geliştirme</a>
-                <a href="#" class="list-group-item list-group-item-action">mobil geliştirme</a>
-
-            </div>
-            <div class="col-9"></div>
-            <!--content--> <!--about contact ve index e göre değiştirilebilir alanı yazıyoruz başka html çekiyoruz-->
-            {% block content %}{% endblock %}
-        </div>
-    </div>
-
+    {% block content %}{% endblock %}
+    
+    <h1>TEST</h1>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/js/bootstrap.min.js" ></script>
     {% block js_files %}{% endblock  %}
 </body>

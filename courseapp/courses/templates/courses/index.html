@@ -1,10 +1,20 @@
 {% extends 'layout.html' %}
 
-{% block content %}
-<h1>kurslar</h1>
-{% endblock  %}
-
-
 {% block title %}
 kurslar
 {% endblock  %}
+
+{% block content %}
+<div class="container mt-3"> <!--mt-3 margin top ile üstten bosluk verdik mt 1 2 3 olabilir-->
+    <div class="row"> <!--satırı böldük 3 birim sol, sağ 9 sağ-->
+        <div class="col-3"></div>
+ <!--menu-->
+            {% include "courses/partials/_categories.html" %}
+
+        <div class="col-9"></div>
+        <!--content--> <!--about contact ve index e göre değiştirilebilir alanı yazıyoruz başka html çekiyoruz-->
+        
+    </div>
+</div>
+{% endblock  %}
+
